@@ -10,4 +10,5 @@ The game initially starts off with a 2x2 grid, and then increases to 3x3, 4x4, a
 
 ###To do: 
 Upgrades grid after choosing a word
+
 Solve for remaining words
