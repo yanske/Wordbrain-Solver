@@ -22,17 +22,11 @@ wordSizes.append(int(raw_input("What is the first word size: ")))
 letterPerms = newGrid.returnPerms(wordSizes[0])
 wordsPerm = []
 for perm in letterPerms:
-    if perm+"\n" in words:
+    #if a word and if word possible by game rules
+    if perm+"\n" in words and newGrid.wordPossible(perm):
         wordsPerm.append(perm)
 
-potentialWords = []
-
-#filter out inaccessible words
-for word in wordsPerm:
-    if newGrid.wordPossible(word):
-        potentialWords.append(word)
-
-print potentialWords
+print wordsPerm
 
 
 
